@@ -9,7 +9,7 @@ import pandas
 from requests import Session
 from requests.models import Request
 
-from json_crawler import PROJECT_PATH
+from json_robot import PROJECT_PATH
 
 
 def get_current_date():
