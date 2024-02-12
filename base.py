@@ -45,7 +45,7 @@ async def sender(url):
     session = Session()
     request = Request(method='get', url=url)
     prepared_request = session.prepare_request(request)
-    prepared_request.headers = {'content-type': 'application/json'}
+    prepared_request.headers.update({'content-type': 'application/json'})
 
     try:
         response = session.send(prepared_request)
